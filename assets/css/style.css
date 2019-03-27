@@ -88,7 +88,7 @@ color:#9796f0;
     display: block;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) and (min-width: 401px){
     
     .apresentation {
     width: auto;
@@ -128,14 +128,61 @@ color:#9796f0;
 
     .content  {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
     }
 
     #vania-rocket {
         width: auto;
         display: flex;
-        justify-content: center;
+        align-content: center;
     }
   }
 
-  
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .apresentation {
+        width: auto;
+        height: 700px;
+        background-color: white;
+        
+        }
+    
+        .social-media {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    
+        .button {
+            margin-right: 2px;
+            max-width:20px;
+            min-width: 20px
+        }
+    
+        .title, .text{
+            text-align: center;
+            width: auto;
+        }
+        
+        .title {
+            font-size: 6vw;
+        }
+        
+        .text {
+            font-size: 2vw;
+            line-height: 2.5vw;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    
+        .content  {
+          display: flex;
+          flex-wrap: wrap;
+        }
+    
+        #vania-rocket {
+            width: 50%;
+            display: flex;
+            align-content: center;
+        }
+  }
