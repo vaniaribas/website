@@ -9,6 +9,14 @@ body {
   color: #585857;
 }
 
+#emoji {
+    display: inline;
+    max-width: 70px;
+    min-width: 15px;
+    margin: 0;
+
+}
+
 .social-media {
   display: flex;
   flex-direction: row;
@@ -63,6 +71,7 @@ body {
   text-align: left;
   line-height: 1.5vw;
   max-width: 300px; 
+  padding: 0;
 }
 
 #vania-rocket {
@@ -93,66 +102,20 @@ body {
   display: block;
 }
 
-@media only screen and (max-width: 1024px) {
-  .apresentation {
-    width: auto;
-    background-color: white;
-  }
-
-  .social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  .button {
-    margin-right: 2px;
-    max-width: 20px;
-    min-width: 20px;
-  }
-
-  .title,
-  .text {
-    text-align: center;
-    width: auto;
-  }
-
-  .title {
-    font-size: 6vw;
-    padding: 0 3vw;
-  }
-
-  .text {
-    font-size: 2vw;
-    line-height: 2.5vw;
-    text-align: justify;
-    justify-content: center;
-    margin-bottom: 50px;
-    padding: 0 9vw;
-  }
-
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  #vania-rocket {
-    width: 80%;
-  }
-}
 
 @media only screen and (max-width: 1159px) {
     .apresentation {
       width: auto;
-      background-color: white;
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 200px 100px;
+      padding: 50px 80px;
     }
   
     .text-apresentation {
         display: flex;
         align-items: center;
     }
-
 
 
     .social-media {
@@ -163,11 +126,10 @@ body {
     }
   
     .button {
-      margin-right: 2px;
-      max-width: 20px;
-      min-width: 20px;
-    }
-  
+        min-width: 60px;
+        margin-right: 2px;
+      }
+
     .title,
     .text {
       text-align: center;
@@ -185,7 +147,7 @@ body {
       text-align: justify;
       justify-content: center;
       margin-bottom: 50px;
-      padding: 0 3vw;
+      max-width: -webkit-fill-available;
     }
   
     .content {
@@ -197,6 +159,60 @@ body {
       width: 80%;
     }
   }
+
+
+@media only screen and (max-width: 1024px) and (min-width: 961px) {
+  .apresentation {
+    width: auto;
+    height: auto;
+    background-color:rgba(255, 255, 255, 0.5);
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    min-width: 60px;
+    margin-right: 2px;
+  }
+
+  .title,
+  .text {
+    text-align: center;
+    width: auto;
+  }
+
+  .title {
+    font-size: 6vw;
+    padding: 0 2vw;
+  }
+
+  .text {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-width: -webkit-fill-available;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #vania-rocket {
+    width: 80%;
+  }
+}
+
+
+
+
 
 /*@media only screen and (min-width: 401px) and (max-width: 960px) {
   .apresentation {
