@@ -1,188 +1,248 @@
-
 body {
-    background-image: url('/assets/img/shapes.svg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center top;
-    background-color: #f0f6fd;
-    font-family: 'Roboto Mono', monospace;
-    color: #585857;
+  background-image: url("assets/img/shapes.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  background-color: #f0f6fd;
+  font-family: "Roboto Mono", monospace;
+  color: #585857;
 }
 
 .social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-
-
 
 .apresentation {
-    width: auto;
-    margin: 80px 80px;
-    padding: 50px;
-    background-color: white;
+  width: auto;
+  max-width: 100%;
+  margin: 80px 80px;
+  padding: 50px;
+  background-color: white;
 }
 
 .social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .button {
-    max-width:30px;
-    min-width: 30px;
-    margin-right: 2px;
+  max-width: 30px;
+  min-width: 30px;
+  margin-right: 2px;
 }
 
-
-.button:hover{
-transition: transform .2s;
-transform: scale(1.5);
+.button:hover {
+  transition: transform 0.2s;
+  transform: scale(1.5);
 }
-
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: rap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.text-apresentation{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-} 
+.text-apresentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 .title {
-    font-size: 4vw;
-    text-align: left;
+  font-size: 4vw;
+  text-align: left;
 }
 
 .text {
-    font-size: 1vw;
-    text-align: left;
-    line-height: 1.5vw;
-    width: 350px;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 1.5vw;
+  max-width: 300px; 
 }
 
 #vania-rocket {
-    display:flex;
-    align-self: flex-end;
-    width: 600px;
-}
-
-.socialmedia:hover {    
-  background: #fbc7d4;
+  display: flex;
+  align-self: flex-end;
+  width: 600px;
 }
 
 .socialmedia {
-text-decoration: none;
-color:#9796f0;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+  background-image: linear-gradient(
+    rgba(203, 93, 157, 0.8),
+    rgba(203, 93, 157, 0.8)
+  );
+  background-size: 100% 0.5em;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom -40%;
+}
+
+.socialmedia:hover {
+  background: #fbc7d4;
 }
 
 .title > span {
-    display: block;
+  display: block;
 }
 
-@media only screen and (max-width: 576px) and (min-width: 401px){
-    
-    .apresentation {
+@media only screen and (max-width: 1024px) {
+  .apresentation {
     width: auto;
-    height: 500px;
     background-color: white;
-    
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    margin-right: 2px;
+    max-width: 20px;
+    min-width: 20px;
+  }
+
+  .title,
+  .text {
+    text-align: center;
+    width: auto;
+  }
+
+  .title {
+    font-size: 6vw;
+    padding: 0 3vw;
+  }
+
+  .text {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0 9vw;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #vania-rocket {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1159px) {
+    .apresentation {
+      width: auto;
+      background-color: white;
     }
+  
+    .text-apresentation {
+        display: flex;
+        align-items: center;
+    }
+
+
 
     .social-media {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 30px;
     }
-
+  
     .button {
-        margin-right: 2px;
-        max-width:20px;
-        min-width: 20px
+      margin-right: 2px;
+      max-width: 20px;
+      min-width: 20px;
     }
-
-    .title, .text{
-        text-align: center;
-        width: auto;
-    }
-    
-    .title {
-        font-size: 6vw;
-    }
-    
+  
+    .title,
     .text {
-        font-size: 2vw;
-        line-height: 2.5vw;
-        justify-content: center;
-        margin-bottom: 30px;
+      text-align: center;
+      width: auto;
     }
-
-    .content  {
+  
+    .title {
+      font-size: 6vw;
+      padding: 0 3vw;
+    }
+  
+    .text {
+      font-size: 2vw;
+      line-height: 2.5vw;
+      text-align: justify;
+      justify-content: center;
+      margin-bottom: 50px;
+      padding: 0 3vw;
+    }
+  
+    .content {
       display: flex;
       flex-wrap: wrap;
     }
-
+  
     #vania-rocket {
-        width: auto;
-        display: flex;
-        align-content: center;
+      width: 80%;
     }
   }
 
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .apresentation {
-        width: auto;
-        height: 700px;
-        background-color: white;
-        
-        }
-    
-        .social-media {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-    
-        .button {
-            margin-right: 2px;
-            max-width:20px;
-            min-width: 20px
-        }
-    
-        .title, .text{
-            text-align: center;
-            width: auto;
-        }
-        
-        .title {
-            font-size: 6vw;
-        }
-        
-        .text {
-            font-size: 2vw;
-            line-height: 2.5vw;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-    
-        .content  {
-          display: flex;
-          flex-wrap: wrap;
-        }
-    
-        #vania-rocket {
-            width: 50%;
-            display: flex;
-            align-content: center;
-        }
+/*@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .apresentation {
+    width: auto;
+    height: 700px;
+    background-color: white;
   }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    margin-right: 2px;
+    max-width: 20px;
+    min-width: 20px;
+  }
+
+  .title,
+  .text {
+    text-align: center;
+    width: auto;
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+
+  .text {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #vania-rocket {
+    width: 50%;
+    display: flex;
+    align-content: center;
+  }
+}
