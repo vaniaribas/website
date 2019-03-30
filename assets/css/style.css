@@ -24,9 +24,9 @@ body {
 }
 
 .apresentation {
-  width: auto;
-  max-width: 100%;
-  margin: 80px 80px;
+  width: 80vw;
+  height: 70vh;
+  margin: 8vh auto 5vh auto;
   padding: 50px;
   background-color: white;
 }
@@ -53,6 +53,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 2.5vw 0;
 }
 
 .text-apresentation {
@@ -86,8 +87,8 @@ body {
   outline: none;
   text-decoration: none;
   background-image: linear-gradient(
-    rgba(203, 93, 157, 0.8),
-    rgba(203, 93, 157, 0.8)
+    rgba(175, 150, 236, 0.8),
+    rgba(175, 150, 236, 0.8)
   );
   background-size: 100% 0.5em;
   background-repeat: no-repeat;
@@ -107,8 +108,8 @@ body {
     .apresentation {
       width: auto;
       height: auto;
-      background-color: rgba(255, 255, 255, 0.5);
-      margin: 200px 100px;
+      background-color: white;
+      margin: 10vw;
       padding: 50px 80px;
     }
   
@@ -165,7 +166,7 @@ body {
   .apresentation {
     width: auto;
     height: auto;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:white;
   }
 
   .social-media {
