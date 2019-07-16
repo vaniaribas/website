@@ -11,8 +11,7 @@ body {
 
 #emoji {
     display: inline;
-    max-width: 70px;
-    min-width: 15px;
+    max-width: 20%;
     margin: 0;
 
 }
@@ -104,50 +103,65 @@ body {
 }
 
 
-/* label {
-  margin: 0 40px 0 0;
-  display: none;
-  width: 26px;
-}
-
-#toggle {
-  display: none;
-}
-
-
+/*
 
 @media only screen and (max-width: 900px) {
 
-  label {
-    display: block;
-    cursor: pointer;
+  .apresentation {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: 10vw;
+    padding: 50px 80px;
   }
-.nav {
-  width: auto;
-  float: right;
-}
+
+  .text-apresentation {
+      display: flex;
+      align-items: center;
+  }
 
   .social-media {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     display: none;
-   
   }
-.social-media a {
-  border-bottom: 1px solid rgba(175, 150, 236, 0.8);
-  margin: 0;
-}
-
-  .button{
-    min-width: 10px;
+  .button {
+    min-width: 60px;
     margin-right: 2px;
   }
+  
 
-#toggle:checked + .social-media {
-  display: block;
-}
-} */
+  .title,
+  .text {
+    text-align: center;
+    width: auto;
+  }
+
+  .title {
+    font-size: 6vw;
+    padding: 0 2vw;
+  }
+
+  .text {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-width: -webkit-fill-available;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #vania-rocket {
+    width: 80%;
+  }
+
+}*/
 
 
 
@@ -261,6 +275,56 @@ body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .apresentation {
+    width: auto;
+    height: auto;
+    background-color:white;
+  }
+
+  
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    min-width: 20px;
+    margin-right: 2px;
+  }
+  
+
+  .title,
+  .text {
+    text-align: center;
+    width: auto;
+  }
+
+  .title {
+    font-size: 5vw;
+    padding: 0 2vw;
+  }
+
+  .text {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-width: -webkit-fill-available;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #vania-rocket {
+    width: auto;
+  }
+}
 
 
 
