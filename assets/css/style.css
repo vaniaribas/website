@@ -275,56 +275,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .apresentation {
-    width: auto;
-    height: auto;
-    background-color:white;
-  }
-
-  
-  .social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  .button {
-    min-width: 20px;
-    margin-right: 2px;
-  }
-  
-
-  .title,
-  .text {
-    text-align: center;
-    width: auto;
-  }
-
-  .title {
-    font-size: 5vw;
-    padding: 0 2vw;
-  }
-
-  .text {
-    font-size: 3.5vw;
-    line-height: 4.5vw;
-    text-align: left;
-    justify-content: center;
-    margin-bottom: 50px;
-    max-width: -webkit-fill-available;
-  }
-
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  #vania-rocket {
-    width: 80%;
-  }
-}
 
 
 
