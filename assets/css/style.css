@@ -104,7 +104,7 @@ body {
 }
 
 
-label {
+/* label {
   margin: 0 40px 0 0;
   display: none;
   width: 26px;
@@ -147,7 +147,7 @@ label {
 #toggle:checked + .social-media {
   display: block;
 }
-}
+} */
 
 
 
